@@ -5,7 +5,7 @@ class LongSubArrHash{
   public static int getLongestSubarray(int[] arr, long k){
     int maxLen = 0;
     int n = arr.length;
-    int sum = 0;
+    long sum = 0;
     HashMap<Long, Integer> preSumMap = new HashMap<>();
 
     for(int i=0; i<n; i++){
@@ -16,12 +16,15 @@ class LongSubArrHash{
       }
      long rem = sum - k;
 
-     if(preSumMap.containsKey(rem) == k){
+     if(preSumMap.containsKey(rem)){
          int len = i - preSumMap.get(rem);
          maxLen = Math.max(maxLen, len);
      }
 
-      preSumMap.get(sum) = i ;
+      if(!preSumMap.containsKey(sum)) {
+        preSumMap.put((long)sum, i); 
+   }
+
 
                   //  OR 
 

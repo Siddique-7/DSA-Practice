@@ -7,6 +7,7 @@ public static int[] getSingle(int[] arr){
 
 int n = arr.length;
 // int max=Math.max(arr);
+int max = 0;
 
 for(int i:arr){
   if(i > max){
