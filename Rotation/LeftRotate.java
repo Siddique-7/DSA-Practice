@@ -53,5 +53,6 @@ public class LeftRotate {
     int target = sc.nextInt();
     int[] result = leftRotate(arr, target);
     System.out.println(Arrays.toString(result));
+    sc.close();
   }
 }

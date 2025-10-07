@@ -44,5 +44,7 @@ public class SingleNumHashMap {
 
  int ans = getSingle(arr);
  System.out.println("The Single element is: "+ans);
+
+ sc.close();
 }
   }

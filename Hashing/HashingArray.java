@@ -55,6 +55,7 @@ public static void main(String[] args) {
      int num = sc.nextInt();
      System.out.println(hashingArr[num]);
   }
+  sc.close();
 }
 
 }
